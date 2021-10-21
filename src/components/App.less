@@ -1,0 +1,46 @@
+.app {
+    display: block;
+    width: 100%;
+    height: 100%; 
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+
+    &__about-me,
+    &__list-skills,
+    &__demo-project,
+    &__education,
+    &__work {
+        .padding-top-section();
+    }
+
+
+    &__about-me {
+        padding-top: 100px;
+
+        @media screen and (min-width: 576px) {
+            padding-top: 120px;
+        }
+        @media screen and (min-width: 768px) {
+            padding-top: 140px;
+        }
+        @media screen and (min-width: 992px) {
+            padding-top: 160px;
+        }
+        @media screen and (min-width: 1200px) {
+            padding-top: 180px;
+        }
+    }
+
+    &__work {
+        @media screen and (max-width: 549px) {
+            padding-bottom: 0;
+        }
+    }
+
+    &__footer {
+        padding-top: 50px;
+    }
+}

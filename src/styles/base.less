@@ -1,0 +1,100 @@
+html, body {
+    position: relative;
+}
+
+body {
+    -ms-overflow-style: scrollbar;
+}
+
+#root {
+    width: 100%;
+    min-width: 320px;
+    min-height: 100vh;
+    position: relative;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+a {
+    text-decoration: none;
+    
+    &:focus {
+        outline: none;
+    }
+}
+
+ul, li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5 {
+    margin: 0;
+    padding: 0;
+}
+
+p {    
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    margin: 0 auto;
+    padding: 0 15px;
+    // background-color: green;  
+    @media screen and (min-width: 576px) {
+        max-width: 540px;
+    }
+    @media screen and (min-width: 768px) {
+        max-width: 720px;
+    }
+    @media screen and (min-width: 992px) {
+        max-width: 960px;
+    }
+    @media screen and (min-width: 1200px) {
+        max-width: 1140px;
+    }
+
+    @media screen and (min-width: 1400px) {
+        max-width: 1320px;
+    }
+}
+
+*:active, *:focus {
+    outline: none;
+    border: none;
+}
+
+i {
+    font-size: 17px;
+    @media screen and (min-width: 576px) {
+        font-size: 17px;
+    }
+    @media screen and (min-width: 768px) {
+        font-size: 18px;    
+    }
+    @media screen and (min-width: 992px) {
+        font-size: 19px;    
+    }
+    @media screen and (min-width: 1200px) {
+        font-size: 20px;    
+    }
+
+    @media screen and (min-width: 1400px) {
+        font-size: 21px;    
+    }
+}
+
+// * {
+//     outline: 1px solid rebeccapurple;
+//  }
